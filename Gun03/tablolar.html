@@ -9,10 +9,13 @@
 
 <body>
     <h2>Memleketler</h2>
-    <table border="1"><!-- illegal kullanım -->
+    <table border="1"><!-- illegal kullanım CSS kullan-->
         <tr><!-- table row -->
             <!-- alt+shift+a = seçileni yorum yap -->
             <!-- ctrl+k+u = yorumdan çıkarır -->
+             <th rowspan="4">
+                TÜRKİYE
+             </td>
             <th><!-- table heading -->
                 Plaka
             </th>
@@ -44,7 +47,48 @@
             <td>Ege</td>
             <td>Var</td>
         </tr>
+        <!-- tr>td*5+tab -->
+        <tr>
+            <td>06</td>
+            <td>Ankara</td>
+            <td>Anıtkabir</td>
+            <td>İç Anadolu</td>
+            <td>Yok</td>
+        </tr>
+    </table>
+
+    <!-- shift+delete = satır silme -->
+
+    <h2>Filmler</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Film adı</th>
+                <th>Yıl</th>
+                <th>Puan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Babam ve Oğlum</td>
+                <td>2005</td>
+                <td>8.2</td>
+            </tr>
+
+            <tr>
+                <td>Interstellar</td>
+                <td>2014</td>
+                <td>8.7</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Ortalama Puan</th>
+                <th>8.025</th>
+            </tr>
+            <tfoot>
     </table>
 </body>
+
 
 </html>
