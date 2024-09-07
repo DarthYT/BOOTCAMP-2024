@@ -39,12 +39,53 @@
         div p {
             font-family: "comic Sans MS";
         }
+
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+
+        /* attribute */
+        [title] {
+            background-color: orange;
+        }
+
+        li[title] {
+            font-style: italic;
+        }
+
+        h2+p {
+            text-indent: 60px;
+        }
+
+        /* odd ya da 2n+1 tek*/
+        li:nth-child(odd) {
+            background-color: gainsboro;
+        }
+
+        /* 6. çocuk */
+li:nth-child(7) {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    font-family: impact;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px blue;
+    color: purple;
+}
+
     </style>
 </head>
 
 <body>
-    <h1>Türkiye</h1>
-    <h2>Denizli</h2>
+    <div style="border: 10px dashed red">
+        <h1>Türkiye</h1>
+        <h2>Denizli</h2>
+
+        <p>sdsdsdsdsdsdsdsds</p>
+    </div>
 
     <p>Bir sanayi, ihracat ve ticaret merkezi olan Denizli, aynı zamanda altmış beş bine yaklaşan üniversite öğrencisine
         ev sahipliği yapmaktadır. Bir yılda milyonlarca yerli ve yabancı turisti ağırlayan il, bir turizm kenti
@@ -65,7 +106,7 @@
 
         <section>
             <p>
-                Selamlar, Hiyerarşiye dikkat.
+                Selamlar, <span title="önem sıralaması">Hiyerarşiye</span> dikkat.
             </p>
 
         </section>
@@ -74,15 +115,14 @@
 
     <h3>ilçeler</h3>
     <ul>
-        <li>Acıpayam</li>
+        <li title="deprem oldu">Acıpayam</li>
         <li class="favori">Babadağ</li>
         <li class="favori">Baklan</li>
         <li>Bekilli</li>
         <li>Beyağaç</li>
         <li id="memleket" class="favori">Bozkurt</li>
+        <li>Buldan</li>
     </ul>
-
-
 </body>
 
 </html>
