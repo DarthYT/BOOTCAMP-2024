@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        /* class selector */
+        .favori {
+            border-left: 10px solid #00aff0;
+        }
+
+        /* id */
+
+        #memleket {
+            text-align: center;
+        }
+
+        #memleket::after {
+            content: "(OTOPARK)";
+            font-weight: bold;
+        }
+
+        /* immediate child */
+        div>p {
+            color: red;
+            margin: 40px 2rem;
+            text-align: justify;
+            font-size: 80%;
+        }
+
+        div p {
+            font-family: "comic Sans MS";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Türkiye</h1>
+    <h2>Denizli</h2>
+
+    <p>Bir sanayi, ihracat ve ticaret merkezi olan Denizli, aynı zamanda altmış beş bine yaklaşan üniversite öğrencisine
+        ev sahipliği yapmaktadır. Bir yılda milyonlarca yerli ve yabancı turisti ağırlayan il, bir turizm kenti
+        olmasının yanı sıra düzenlenen yerel, ulusal ve uluslararası etkinliklerle eğitim, kongre, kültür ve sanat
+        merkezi özelliğindedir. GEKA (Güney Ege Kalkınma Ajansı) merkezi Denizli'dedir.</p>
+
+    <p>Akdağ'ın (Babadağ) kuzey yamaçları eteklerinde, Büyük Menderes'in kolu olan Aksu çayına kavuşan derelerle hafifçe
+        yarılmış bir plato üzerinde yer alan Denizli, yeni bir kenttir. Asıl kent buradan 6-7 kilometre kadar kuzeydeki
+        Laodikeia (Laodicaea) adlı yerdeydi.</p>
+
+    <!-- powertoys windows incele -->
+
+    <div>
+        <p>
+            Şehirde UNESCO'ya giren Hierapolis, Laodikeia, Tripolis, Tabea, Attoudda, Eumenea, Collossea vb. birçok
+            antik kent bulunmaktadır.
+        </p>
+
+        <section>
+            <p>
+                Selamlar, Hiyerarşiye dikkat.
+            </p>
+
+        </section>
+
+    </div>
+
+    <h3>ilçeler</h3>
+    <ul>
+        <li>Acıpayam</li>
+        <li class="favori">Babadağ</li>
+        <li class="favori">Baklan</li>
+        <li>Bekilli</li>
+        <li>Beyağaç</li>
+        <li id="memleket" class="favori">Bozkurt</li>
+    </ul>
+
+
+</body>
+
+</html>
