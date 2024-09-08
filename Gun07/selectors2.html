@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector2</title>
+
+    <style>
+        .önemli {
+            border-left: 10 px solid green;
+        }
+
+        /* sonra gelen */
+        .önemsiz+li {
+            border-left: 10 px solid red;
+        }
+
+        /* sonra gelen */
+        .önemsiz~li {
+            border-left: 10 px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Nemo at et commodi?</li>
+        <li class="önemli">Aperiam quam quae saepe?</li>
+        <li>Nihil et saepe totam?</li>
+        <li>Voluptas mollitia natus iusto.</li>
+        <li>Et, deleniti cum. Similique!</li>
+        <li class="önemsiz">Necessitatibus, laboriosam eos! At?</li>
+        <li>Esse ullam reiciendis aut!</li>
+        <li>Nisi nulla possimus architecto.</li>
+        <li>Sed, illum. Sit, modi?</li>
+    </ul>
+    
+</body>
+
+</html>
