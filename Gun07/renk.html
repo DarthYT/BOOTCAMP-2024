@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renk</title>
     <style>
-        div {
+        div.kutu1 {
             /*                      red green blue */
-            background-color: rgb(16,125,57);
-            color: rgb(233, 236, 56);
+            background-color: rgb(16, 125, 57);
+            /* mod16 #107d39 =rgb(16,125,57)*/
+            color: #f0ebe4;
+            height: 20px;
+        }
+        .kutu2 {
+            background-image: url(https://picsum.photos/id/997/500/300);
+            height: 200px;
+            font-family: Impact;
+            font-size: 128px;
+        }
+
+        .ortala {
+            /* df */
+            display: flex;
+            /* jcc */
+            justify-content: center;
+            /* aic */
+            align-items: center;
         }
     </style>
 </head>
+
 <body>
-    <div>sassdsaas</div>
+    <!-- d'v/kutu2 -->
+    <div class="kutu2 ortala">ADANA</div>
+    <div class="kutu1">KUTU1</div>
 </body>
+
 </html>
