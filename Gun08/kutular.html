@@ -28,7 +28,10 @@
             align-items: center;
             justify-content: center;
             /* flex geldikten sonra float çok kullanılmıyor. Float'un bir çok zorluğu var. */
-            float: left ;
+            float: left;
+            /* outline'ın genişlik ve yüksekliği değiştirmez, border'ın dışına bir katman koyar*/
+            outline: 5px solid rgba(255, 0, 200, 0.479);
+            offset: 15px;
         }
 
         main {
@@ -40,6 +43,7 @@
 </head>
 
 <!-- PROBLEM: main kutusunun kenarlığı içindeki her şeyi çerçelevesi gerekirken neden şu an çevrelemiyor.  -->
+
 <body>
     <main>
         <!-- div*10>{Kutu $} -->
