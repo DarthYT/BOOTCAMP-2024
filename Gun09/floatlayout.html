@@ -45,6 +45,32 @@
             margin-left: 10px;
             margin-right: 10px;
         }
+
+        /* EKRAN MAXIMUM 500PX İSE */
+        @media (max-width: 500px) {
+
+            .col1,
+            .col2,
+            .col3 {
+                width: 100%;
+                /* satt yönünde gir */
+                margin: 0 0 10px 0;
+            }
+        }
+
+        /* YAZICIDAN ÇIKTI ALIRKEN DİKKAT EDİN:
+Header YAZISI BÜYÜK HARF OLACAK  */
+
+        @media print {
+            header {
+                text-transform: uppercase;
+            }
+
+            /* çıktı alırken footer gizle  */
+            footer {
+                display: none;
+            }
+        }
     </style>
 </head>
 
