@@ -20,8 +20,19 @@
             float: right;
         }
 
+        div.kutu:nth-child(2n) {
+            float: left
+        }
+
         /* ÇÖZÜM 1: float'un kesilmesini istediğimiz float eden emandan sonra boş bir dive bu sınıf verilir */
         .temizlik {
+            clear: both;
+        }
+
+        /* "sadece css çözümü" */
+        .hepsi::after {
+            content: "İNANMIYORUM";
+            display: block;
             clear: both;
         }
     </style>
@@ -43,8 +54,8 @@
         <div class="kutu">Kutu 10</div>
         <div class="kutu">Kutu 11</div>
         <div class="kutu">Kutu 12</div>
-        <div class="temizlik"></div>
+        <!-- <div class="temizlik"></div> -->
     </div>
 </body>
-aa
+
 </html>
