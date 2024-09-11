@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözde Element</title>
+
+    <style>
+        html {
+            font-size: 24px;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            float: left;
+            line-height: .75;
+            font-weight: bold;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 600;
+            /*       top  x  bottom */
+            margin: 40px auto 0;
+            /* https: //cssgradient.io/gradient-backgrounds/ */
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #6273c9 0%, #caacc8 46%, #136910 100%);
+            padding: 36px;
+            border-radius: 20px;
+
+            /* https://getcssscan.com/css-box-shadow-examples */
+            box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+
+        }
+
+        @media (max-width: 720px) {
+            main {
+                margin: 40px;
+            }
+        }
+    </style>
+</head>
+<main>
+
+    <body>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quidem nihil ad voluptates recusandae error
+            odio
+            provident nostrum nemo quisquam reiciendis cupiditate eaque, laudantium assumenda ea autem ipsum aspernatur
+            blanditiis dolor nulla, voluptatum itaque aperiam modi? Labore in quaerat dolores ratione asperiores aliquid
+            porro officia numquam nesciunt excepturi. Soluta quam dignissimos consectetur, placeat repellendus optio? Ab
+            repellendus ea inventore libero!</p>
+        <p>Veritatis incidunt ad beatae a sit autem necessitatibus repellendus dolorum consequatur, eligendi natus
+            tempore
+            assumenda adipisci explicabo, laborum officia! Odio minima laboriosam pariatur vitae. Facere, facilis?
+            Voluptatem quod eveniet, in dolorem consequuntur dolore officia ipsa ducimus! Voluptatum amet itaque earum
+            totam
+            ipsum nostrum saepe nesciunt, possimus vitae eligendi doloribus fugit illum, similique nemo qui tempore
+            accusamus doloremque quae nihil voluptas?</p>
+        <p>A quibusdam nobis dolor. Quisquam, excepturi eligendi cumque soluta ex deleniti. Incidunt, cum repellat,
+            assumenda sit eveniet odio deleniti in labore quas unde dolores, voluptatem voluptatibus? Placeat itaque sed
+            recusandae, rerum explicabo eligendi praesentium excepturi. Voluptates illum, reiciendis itaque voluptatum
+            eveniet a dolores nulla et debitis dolore repudiandae modi, porro ducimus beatae velit non corporis,
+            veritatis
+            asperiores facere explicabo laudantium.</p>
+        <p>Quaerat perspiciatis, aliquid optio eum doloremque, recusandae id temporibus cupiditate, velit explicabo ea.
+            Consectetur perspiciatis odit obcaecati placeat veniam architecto sit aut reprehenderit? Perspiciatis
+            maiores ex
+            architecto inventore officia nemo eligendi atque, nobis blanditiis et ipsum, consequatur commodi soluta
+            doloribus consequuntur. Voluptatibus aspernatur vero voluptatem quo! Totam suscipit odio sit, quos quas,
+            accusamus repudiandae aspernatur rem quod, debitis consequatur at!</p>
+    </body>
+</main>
+
+</html>
