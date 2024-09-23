@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>JavaScript Giriş II</h1>
+    <h1><span lang="en"> JavaScript</span> Giriş II</h1>
     <p>Bir HTML dökümanında JavaScript'i 3 farklı şekilde dökümana dahil edebiliriz.</p>
 
     <!--A. SCRIPT TAGLARI ARASINDA-->
@@ -21,6 +21,14 @@
     <!-- B. HARİCİ DOSYA -->
     <script src="kod.js">
     </script>
+    <hr>
+
+    <!-- C. INLINE JAVASCRIPT -->
+    <button onclick="alert('WOW')">BANA TIKLAMA</button>
+
+    <hr>
+    <button id="minnos" onmouseenter="document.getElementById('minnos').textContent = 'ŞAKA YAPTIM :)'">
+        TIKLA</button>
 
 </body>
 
