@@ -11,7 +11,6 @@
 
     <script src="../ortak/yaz.js"></script>
 
-
     <script>
         //operatör, taraflar arasında
         //belli işlemleri yaparak
@@ -21,7 +20,49 @@
         yaz(4 + 4);
         yaz();
         yaz("yt");
+        ciz("falan filan");
+
+        // string concatenation
+        yaz("4" + 4); // "44"
+
+        let ispat = "4" + 4;
+
+        // typeof
+        yaz(typeof ispat);
+
+
+        // çarpma işlemi
+        yaz(3 * 4);
+
+        // çarpma işlemi tür değişimi
+        yaz("2" * "2");
+
+        // () operatörü
         ciz();
+
+        let f = ciz;
+        f();
+
+        // . operatörü
+        yaz(document.title);
+        document.title = "Adana Kebap + Kola + Magnolya";
+
+        let a = 3;
+        a += 4;
+        yaz(a);
+
+        let s1 = 2;
+        s1 *= s1;
+        yaz(s1);
+
+        let s3 = (2 + 3) * 4;
+        ciz(s3);
+
+        let s6 = "falanca" + 4 * 3;
+        ciz(s6);
+
+        let s7 = ("2" + 4) * 3;
+        yaz(s7)
     </script>
 </body>
 

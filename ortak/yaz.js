@@ -4,9 +4,9 @@ document.body.style.fontSize = "3em";
 document.body.style.fontFamily = '"Courier New", monospace';
 
 function yaz(html = "") {
-    document.write(html + "<br>");
+    document.body.innerHTML += html + "<br>";
 }
 
 function ciz(html = "") {
-    document.write(html + "<hr>");
+    document.body.innerHTML += html + "<hr>";
 }
