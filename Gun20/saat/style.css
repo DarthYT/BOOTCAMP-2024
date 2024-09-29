@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #282c34; /* Set a dark background color */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red; /* Keeps the border around the clock */
+    color: white;
+    font-family: 'Orbitron', sans-serif; /* Corrected the font-family declaration */
+}
+
+#saat {
+    font-size: 12vw; /* Responsive font size */
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing effect */
+}
