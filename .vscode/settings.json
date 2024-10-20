@@ -1,3 +1,6 @@
 {
-    "livePreview.defaultPreviewPath": "/Gun12/tablolar.htm"
+    "livePreview.defaultPreviewPath": "/Gun12/tablolar.htm",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.showExecutionMessage": false
 }
